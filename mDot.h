@@ -1775,13 +1775,13 @@ class mDot {
         uint8_t getRx2DataRate();
 
         void mcGroupKeys(uint8_t *mcKeyEncrypt, uint32_t addr, uint8_t groupId, uint32_t frame_count);
-    private:
+
 
         void sleep_ms(uint32_t interval,
                       uint8_t wakeup_mode = RTC_ALARM,
                       bool deepsleep = true);
 
-
+    private:
         void wakeup();
 
         mdot_stats _stats;
